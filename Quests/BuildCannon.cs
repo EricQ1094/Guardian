@@ -21,6 +21,8 @@ public class BuildCannon : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 thisBossFightCG.gameObject.SetActive(true);
+                Inventory_Player.ThisPlayerInventory.RemoveItemInInventory(15);
+                Inventory_Player.ThisPlayerInventory.RemoveItemInInventory(16);
                 Destroy(gameObject);
             }
         }
