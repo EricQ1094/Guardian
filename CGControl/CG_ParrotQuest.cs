@@ -81,6 +81,8 @@ public class CG_ParrotQuest : MonoBehaviour
 
         UIController.ThisUIController.HintNormal("Start Quest - Parrot and Pirate");
 
+        UIController.ThisUIController.UnlockQuest_ParrotandPirate();
+
         Destroy(gameObject);
     }
 }
